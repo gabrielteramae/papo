@@ -1,7 +1,6 @@
 # papo — chat bot no navegador
 
 ![Node](https://img.shields.io/badge/Node-20+-339933?logo=node.js&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-e07a3d)
 
 Um chat simples: você escreve, o modelo responde em fluxo, e a conversa fica **só no navegador** (`localStorage`). O servidor não guarda mensagem. A chave da API fica no processo, nunca no cliente.
 
