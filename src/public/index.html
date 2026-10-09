@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Papo</title>
+    <meta name="theme-color" content="#12110e" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,560;9..144,640&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside id="nav" hidden>
+        <div class="nav-head">
+          <p class="display">Papos</p>
+          <button type="button" id="fresh" class="clay">Novo</button>
+        </div>
+        <div id="list"></div>
+      </aside>
+      <section>
+        <header>
+          <button type="button" id="open" class="icon" aria-label="Abrir conversas">☰</button>
+          <svg viewBox="0 0 32 32" class="mark" aria-hidden="true">
+            <rect width="32" height="32" rx="9" fill="#e07a3d" />
+            <path d="M8 9.5h16v10H14.2L10 23.2v-3.7H8v-10z" fill="#12110e" />
+          </svg>
+          <div>
+            <p class="display name">Papo</p>
+            <p class="mute tiny">Histórico só neste aparelho</p>
+          </div>
+        </header>
+        <div id="log"></div>
+        <form id="composer">
+          <div class="box">
+            <label class="sr" for="draft">Mensagem</label>
+            <textarea id="draft" rows="1" maxlength="4000" placeholder="Escreve aqui"></textarea>
+            <button type="submit" id="send" aria-label="Enviar">↑</button>
+          </div>
+          <p class="mute tiny hint">Enter envia · Shift+Enter quebra a linha</p>
+        </form>
+      </section>
+    </div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
